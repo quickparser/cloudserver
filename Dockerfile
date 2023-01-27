@@ -1,6 +1,7 @@
 ARG NODE_VERSION=16.17.1-bullseye-slim
 
-FROM node:${NODE_VERSION} as builder
+# FROM node:${NODE_VERSION} as builder
+FROM registry.access.redhat.com/ubi8/nodejs-16-minimal as builder
 
 WORKDIR /usr/src/app
 
