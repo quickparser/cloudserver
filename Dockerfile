@@ -1,5 +1,5 @@
-ARG NODE_VERSION=16.19.0-bullseye-slim
-
+# ARG NODE_VERSION=16.19.0-bullseye-slim
+ARG NODE_VERSION=current-bullseye-slim
 FROM node:${NODE_VERSION} as builder
 # FROM registry.access.redhat.com/ubi8/nodejs-16-minimal as builder
 
